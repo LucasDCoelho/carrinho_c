@@ -15,7 +15,7 @@ const int VELOCIDADE_BASE = 120;
 
 void setup() {
   pinMode(A0, INPUT);
-  pinMode(A5, INPUT);
+  pinMode(A1, INPUT);
 
 
   pinMode(4, OUTPUT);
@@ -32,7 +32,7 @@ void setup() {
 
 void loop() {
   int sensorDireito = analogRead(A0);
-  int sensorEsquerdo = analogRead(A5);
+  int sensorEsquerdo = analogRead(A1);
 
   Serial.println(sensorDireito);
   Serial.println(sensorEsquerdo);
